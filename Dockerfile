@@ -8,7 +8,7 @@ COPY pom.xml .
 RUN mvn package
 
 
-FROM tomcat:8.5.53-jdk11-openjdk-slim
+FROM tomcat:8.5.59-jdk11-openjdk-slim
 
 RUN apt-get update \
 	&& apt-get install -y --no-install-recommends \
